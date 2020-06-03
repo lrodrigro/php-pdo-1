@@ -15,14 +15,6 @@ $friends = $statement->fetchAll();
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Mes amis</title>
-    <style>
-        .error{
-            padding:20px;
-            border-radius:4px;
-            border:1px solid red;
-            background:tomato;
-        }
-    </style>
 </head>
 <body>    
     <br>
