@@ -2,11 +2,6 @@
 
 require_once ('connect.php');
 
-function listFriends() : variant_mod
-{
-
-}
-
 $pdo = new \PDO(DSN, USER, PASS);
 
 $query = "SELECT * FROM friend";
