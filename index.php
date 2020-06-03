@@ -9,7 +9,6 @@ $statement = $pdo->query($query);
 $friends = $statement->fetchAll();
 
 ?>
-
 <html>
 <head>
     <meta charset="UTF-8">
@@ -23,8 +22,7 @@ $friends = $statement->fetchAll();
     echo "<li>";
     echo "Prénom" . ' | ' . "Nom";
     echo "</li>" . PHP_EOL;
-    foreach($friends as $friend)
-    {
+    foreach($friends as $friend) {
         echo "<li>" . $friend['firstname'] . ' | ' . $friend['lastname'] . "</li>" . PHP_EOL;
     }        
     echo "</ul>"; 
@@ -45,7 +43,7 @@ $friends = $statement->fetchAll();
     </form>
     <?php 
      
-    if( isset( $_POST['firstname'] ) ) {     
+    if(isset($_POST['firstname'])) {     
         $firstname = trim($_POST['firstname']);
         $lastname = trim($_POST['lastname']);
     
